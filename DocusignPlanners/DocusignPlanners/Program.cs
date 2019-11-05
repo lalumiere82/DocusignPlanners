@@ -12,7 +12,7 @@ namespace DocusignPlanners
         {
             //File name
             string fileName = "Planners.txt";
-
+            
             //Check to see if file is in the directory 
             if (File.Exists(AppDomain.CurrentDomain.BaseDirectory + fileName))
             {
@@ -277,6 +277,7 @@ namespace DocusignPlanners
                     Console.WriteLine(Directory.GetCurrentDirectory());
                     Console.WriteLine();
                     Console.WriteLine("***Errors detected*** \r\n See Docusign_Error file for details.");
+                    File.Delete(fileName);
                     Console.ReadLine();
                 }
                 else
@@ -286,6 +287,7 @@ namespace DocusignPlanners
                     Console.WriteLine();
                     Console.WriteLine("Your formatted Docusign CSV file is in this location:");
                     Console.WriteLine(Directory.GetCurrentDirectory());
+                    File.Delete(fileName);
                     Console.ReadLine();
                 }
             }
