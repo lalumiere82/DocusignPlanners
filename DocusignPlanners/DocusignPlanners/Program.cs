@@ -321,7 +321,7 @@ namespace DocusignPlanners
                         Console.WriteLine("You are now being directed to Docusign.com");
                         File.Delete(fileName);
                         System.Diagnostics.Process.Start("https://account.docusign.com/");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(4000);
                         System.Environment.Exit(0);
                         //Console.ReadLine();
                     }
@@ -337,7 +337,7 @@ namespace DocusignPlanners
                         Console.WriteLine("You are now being directed to Docusign.com");
                         File.Delete(fileName);
                         System.Diagnostics.Process.Start("https://account.docusign.com/");
-                        Thread.Sleep(3000);
+                        Thread.Sleep(4000);
                         System.Environment.Exit(0);
                         //Console.ReadLine();
 
